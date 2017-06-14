@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+.margen-button{
+margin-bottom: .7em;
+}
+a.color_botonIngresar{
+  background:#69f0ae;
+}
+div.tamanñoTotalPadre
+{
+  height: 100%;
+}
+div.marginTop{
+  margin-top: 12em;
+}
+body{
+  height: 100vh;
+}
+div{
+  box-sizing: border-box;
+}
+div.paddig{
+padding: 1em 2em;
+}
+div.tama{
+  margin-bottom: 3em;
+}

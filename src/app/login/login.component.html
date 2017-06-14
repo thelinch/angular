@@ -1,0 +1,69 @@
+<div class="container valign-wrapper tamanñoTotalPadre ">
+  <div class="row paddig tama">
+    <div class="col s12 l10 push-l1 light-blue darken-4 " style="border-radius: 12px 12px 0 0">
+      <h1 class="center-align white-text lighten-5" style="margin: 0;">Bienvenido a <strong>Next Generation school</strong></h1>
+    </div>
+    <div class="col s12  l10 push-l1 grey lighten-3 valign-wrapper tamanñoTotalPadre">
+      <div class="col m4 l4 center-align hide-on-small-only">
+        <img src="../assets/Estudio_login.png" alt="" class="responsive-img" />
+        <div class="input-field col s12 l12">
+          <button class="btn waves-effect waves-light light-blue darken-4" mz-button (click)="bottomSheetModal.open()" type="submit"
+            name="action">Registrase
+                <i class="material-icons right">perm_identity</i>
+              </button>
+        </div>
+      </div>
+      <div class="col m4 l6">
+        <form action="">
+          <div class="input-field col s12 l12  margen-button ">
+            <input type="text" id="first_name" class="validate" name="username">
+            <label for="first_name">User Name</label>
+          </div>
+          <div class="input-field col s12 ">
+            <input type="password" id="last_name" class="validate" name="password">
+            <label for="last_name">Contraseña</label>
+          </div>
+          <div class="col s12 margen-button ">
+            <div class="input-field col s12 l12">
+              <button class="btn waves-effect waves-light deep-purple darken-4 left" type="submit" name="action">Ingresar
+                <i class="material-icons left">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mz-modal #bottomSheetModal [options]="modalOptions" [fullscreen]="false">
+  <mz-modal-header>
+    Preguntas de conocimiento
+  </mz-modal-header>
+  <mz-modal-content>
+    <div class="row">
+      <form action="">
+        <div class="input-field col s12 l12">
+          <input type="number" id="Pregunta1" class="validate">
+          <label for="Pregunta1">Cuanto es ¿1+2?</label>
+        </div>
+        <div class="input-field col s12 l12">
+          <input type="number" id="Pregunta2" class="validate">
+          <label for="Pregunta2">La respuesta de X: ¿x+4=50?</label>
+        </div>
+
+        <div class="input-field col s12 l12">
+          <div class="col s12 l6 ">
+            <button routerLink="Home/alumno" class="btn waves-effect waves-light deep-purple darken-4 left" type="submit" name="action">Registrar Respuestas
+                <i class="material-icons left">send</i></button>
+          </div>
+          <div class="col s12 l6">
+            <button class="btn waves-effect waves-light  red accent-4 left" type="submit" name="action">Cancelar
+                 <i class="material-icons left text-red">heart-broken</i> </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </mz-modal-content>
+</mz-modal>

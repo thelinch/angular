@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col s12">
+    <h4>Ejercicios por Asignatura</h4>
+
+  </div>
+  <div class="col s12">
+    <div class="col s12 m4 l4" *ngFor="let item of this.lista">
+      <div class="card medium hoverable">
+        <div class="card-image">
+          <img src="" alt="" />
+          <span class="card-title"></span>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li>Nombre: {{item.nombre}}</li>
+            <li>Area: {{item.Area}}</li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <a href="#">Ver respuesta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

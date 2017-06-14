@@ -1,0 +1,21 @@
+h3{
+  margin: 0;
+}
+span.esfera{
+  width: 80px;
+  height: 80px;
+  background: teal;
+  border-radius: 98px;
+  display: inline-block;
+  margin-top: 50px;
+}
+span.imagen{
+  width: 55px;
+  height: 55px;
+  background-size: 55px;
+  background-image: url("/Cursos 2017-I/Creatividad/Application/src/assets/html.jpg");
+  
+}
+span.titulo{
+  display: block;
+}

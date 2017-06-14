@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col s3">
+    <div class="col s12">
+      <mz-sidenav [id]="'sidenav-demo'" [collapseButtonId]="'btn-sidenav-demo'" [fixed]="true">
+        <mz-sidenav-header>
+          <li class="sidenav-header">
+            <div class="user-view ">
+              <div class="row valign-wrapper">
+                <div class="col s6 ">
+                  <img src="../assets/alumnoDefault.jpg" alt="" class="circle responsive-img avatar" />
+                </div>
+                <div class="col s6">
+                  <p>
+                    <a href="" class="white-text">Nombre: Jhon</a>
+                  </p>
+                  <p> <a href="" class="white-text">Email:johin@emaim</a></p>
+                </div>
+              </div>
+
+            </div>
+          </li>
+        </mz-sidenav-header>
+        <mz-sidenav-subheader>
+          <h5>Datos del Alumno.</h5>
+        </mz-sidenav-subheader>
+        <mz-sidenav-divider></mz-sidenav-divider>
+        <div class="row">
+          <div class="col s12 user-detalles">
+            <p>
+              Colegio: dsf
+            </p>
+          </div>
+          <div class="col s12 user-detalles">
+            Rango :
+            <div class="ec-stars-wrapper">
+              <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+              <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+              <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+              <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+              <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+            </div>
+          </div>
+          <div class="col s12 uer-detalles-cursos">
+            <ul>
+              <li><a href="">Cursos Pendientes</a></li>
+              <li><a href="">Cursos Completados</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </mz-sidenav>
+      <div class="input-field col s12 l12">
+        <button mz-button [flat]="true" [float]="true" [id]="'btn-sidenav-demo'" class="teal lighten-2">
+  <i class="material-icons small blue-text text-darken-2">add</i>
+              </button>
+      </div>
+    </div>
+  </div>
+  <div class="col s9">
+    <div class="col s12">
+      <nav class="nav-extended blue darken-4">
+        <div class="nav-wrapper">
+          <div class="container">
+            <!-- tabs items -->
+            <ul class="tabs tabs-transparent">
+              <li class="tab"><a routerLink="cursos" routerLinkActive="active">Cursos</a></li>
+
+              <li class="tab "><a routerLink="ejercicios" routerLinkActive="active">Ejercicios</a> </li>
+              <li class="tab "><a routerLink="flujograma-curso" routerLinkActive="active" >Flujograma</a> </li>
+              <li class="tab "><a routerLink="actividades" routerLinkActive="active">Actividades</a> </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col s12">
+      <router-outlet></router-outlet>
+
+    </div>
